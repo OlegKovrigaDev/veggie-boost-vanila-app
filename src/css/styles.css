@@ -6,13 +6,6 @@
 */
 @import url('./modern-normalize');
 @import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./order.css');
-@import url('./vegetables.css');
-@import url('./call.css');
-@import url('./footer.css');
-@import url('./module.css');
 
 :root {
   --accent: #A1C487;
@@ -30,3 +23,11 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./order.css');
+@import url('./vegetables.css');
+@import url('./call.css');
+@import url('./footer.css');
+@import url('./module.css');
