@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url('../fonts/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url('../fonts/DMSans-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url('../fonts/DMSans-Bold.ttf');
+  font-weight: 700;
+}
