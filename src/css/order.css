@@ -1,4 +1,220 @@
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .order {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.order-title-container {
+  margin-bottom: 80px;
+}
+
+.order-title {
+  color: var(--black);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.order-title-pic {
+  background-image: url(../img/order/img-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100px;
+  max-width: 335px;
+  height: 158px;
+  margin-bottom: 20px;
+}
+
+@media (min-resolution: 192dpi) {
+  .order-title-pic {
+    background-image: url(../img/order/img-1@2x.png);
+  }
+}
+
+.order-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-list-item {
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.035em;
+}
+
+.order-buy-container {
+  border-radius: 40px;
+  background-image: radial-gradient(rgba(161, 196, 135, 0.5) 4%, #faf3e7 10%);
+  background-position: 30px 30px;
+  background-size: 50px 50px;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+
+.buy-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.buy-steps-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+  counter-reset: item-counter;
+}
+
+.buy-steps-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  max-width: 220px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.035em;
+  counter-increment: item-counter;
+}
+
+.buy-steps-item::before {
+  content: counter(item-counter);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 18px;
+  line-height: 1;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.buy-container-pic {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+
+  .order-title-container {
+    margin-bottom: 100px;
+  }
+
+  .order-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .order-title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.08em;
+    margin-bottom: 0;
+  }
+
+  .order-text-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .text-list-item {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.023em;
+    max-width: 317px;
+  }
+
+  .text-list-item:last-child {
+    max-width: 279px;
+  }
+
+  .order-title-pic {
+    background-image: url(../img/order/img-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    min-width: 310px;
+    height: 176px;
+    margin-bottom: 0;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .order-title-pic {
+      background-image: url(../img/order/img-1@2x.png);
+    }
+  }
+
+  .order-buy-container {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding: 80px 40px;
+  }
+
+  .buy-container-pic {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 350px;
+    height: 446px;
+  }
+
+  .buy-steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 233px;
+    gap: 40px;
+  }
+
+  .buy-title {
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.07em;
+  }
+
+  .buy-steps-list {
+    margin: 0;
+  }
+
+  .buy-steps-item::before {
+    min-width: 46px;
+    min-height: 46px;
+  }
+
+  .buy-steps-item {
+    max-width: 230px;
+  }
 }
