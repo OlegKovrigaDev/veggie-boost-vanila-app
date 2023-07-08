@@ -1,3 +1,144 @@
 .call {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+.call-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 323px;
+}
+
+.call-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  max-width: 321px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.call-form {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.call-label {
+}
+
+.call-input {
+  border-radius: 100px;
+  border: 1px solid var(--black);
+  opacity: 0.30000001192092896;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 115px 15px 24px;
+  outline: transparent;
+  color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.call-input::placeholder {
+  color: #c1bdbd;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.call-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px 35px;
+  background-color: var(--orange);
+  border-radius: 100px;
+  border: none;
+  min-width: 105px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.img-wrap {
+  background-image: url(../img/call/bg-2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #faf3e7;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  border-radius: 40px;
+}
+
+.img-wrap img {
+  margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .img-wrap {
+    background-image: url(../img/call/bg-2@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .call {
+    padding-bottom: 173px;
+  }
+
+  .container.call-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .call-title {
+    font-size: 40px;
+    max-width: 524px;
+    line-height: 1.11;
+  }
+
+  .call-text {
+    font-size: 18px;
+    max-width: 450px;
+    line-height: 1.33;
+  }
+
+  .call-form {
+    margin-bottom: 80px;
+  }
+
+  .call-input {
+    max-width: 355px;
+  }
+
+  .call-btn {
+    right: 174px;
+  }
+
+  .img-wrap {
+    background-image: url(../img/call/bg-2tab.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .img-wrap {
+      background-image: url(../img/call/bg-2tab@2x.png);
+    }
+  }
 }
