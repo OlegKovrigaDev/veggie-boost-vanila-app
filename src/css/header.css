@@ -106,3 +106,35 @@
     width: 24px;
   }
 }
+.hamburger:before,
+.hamburger div,
+.hamburger:after {
+  content: '';
+  display: block;
+  background: var(--accent);
+  height: 2px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  width: 10px;
+}
+.hamburger:after {
+  width: 13px;
+}
+.hamburger div {
+  width: 20px;
+  margin: 4px 0;
+}
+.hamburger.active:before {
+  width: 20px;
+  transform: translateY(6px) rotate(135deg);
+}
+.hamburger.active:after {
+  width: 20px;
+  transform: translateY(-6px) rotate(-135deg);
+}
+.hamburger.active div {
+  transform: scale(0);
+}
