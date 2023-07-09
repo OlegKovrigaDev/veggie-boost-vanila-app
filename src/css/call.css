@@ -29,9 +29,6 @@
   margin-bottom: 40px;
 }
 
-.call-label {
-}
-
 .call-input {
   border-radius: 100px;
   border: 1px solid var(--black);
@@ -46,6 +43,11 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.04em;
+}
+
+.call-input:hover,
+.call-input:focus {
+  border-color: var(--accent);
 }
 
 .call-input::placeholder {
@@ -72,7 +74,13 @@
   letter-spacing: -0.04em;
 }
 
-.img-wrap {
+.call-btn:hover,
+.call-btn:focus {
+  background-color: var(--accent);
+  outline: none;
+}
+
+.call-img-wrap {
   background-image: url(../img/call/bg-2.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -84,14 +92,14 @@
   border-radius: 40px;
 }
 
-.img-wrap img {
+.call-img-wrap img {
   margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .img-wrap {
+  .call-img-wrap {
     background-image: url(../img/call/bg-2@2x.png);
   }
 }
@@ -130,15 +138,82 @@
     right: 174px;
   }
 
-  .img-wrap {
+  .call-img-wrap {
     background-image: url(../img/call/bg-2tab.png);
+    border-radius: 80px;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .img-wrap {
+    .call-img-wrap {
       background-image: url(../img/call/bg-2tab@2x.png);
     }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .call {
+    padding-bottom: 124px;
+  }
+
+  .container.call-container {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .call-img-wrap {
+    background-image: url(../img/call/bg-2desk.png);
+    max-width: 525px;
+    padding-top: 37px;
+
+    display: flex;
+  }
+
+  .call-text-wrap {
+    padding-top: 98px;
+    padding-bottom: 98px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .call-img-wrap {
+      background-image: url(../img/call/bg-2desk@2x.png);
+    }
+  }
+
+  .call-title {
+    font-size: 48px;
+    text-align: left;
+    max-width: 614px;
+    line-height: 1.04;
+    margin-bottom: 40px;
+  }
+
+  .call-img-wrap img {
+    width: 525px;
+  }
+
+  .call-text {
+    max-width: 523px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+
+  .call-form {
+    margin-bottom: unset;
+  }
+
+  .call-input {
+    margin: 0;
+    max-width: 350px;
+  }
+
+  .call-btn {
+    right: 265px;
   }
 }
