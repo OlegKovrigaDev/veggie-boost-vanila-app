@@ -22,6 +22,10 @@
   margin-bottom: 20px;
 }
 
+.slide-in-left {
+  animation: slide-in-left 3s ease-in-out 1;
+}
+
 .order-title-pic {
   background-image: url(../img/order/img-1.png);
   background-repeat: no-repeat;
@@ -31,6 +35,10 @@
   max-width: 335px;
   height: 158px;
   margin-bottom: 20px;
+}
+
+.order-title-pic.fade-in-down {
+  animation: fade-in-down 1s linear 1;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -47,6 +55,10 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.order-text-list.fade-in-up {
+  animation: fade-in-up 1s linear 1;
 }
 
 .text-list-item {
@@ -111,8 +123,16 @@
   border-radius: 50%;
 }
 
+.bounce-in-right {
+  animation: bounce-in-right 2s ease 1;
+}
+
 .buy-container-pic {
   margin: 0 auto;
+}
+
+.grow {
+  animation: grow 2s ease 1;
 }
 
 @media (min-width: 768px) {
