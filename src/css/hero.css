@@ -148,3 +148,59 @@
         letter-spacing: -0.48px;
     }
 }
+
+@media screen and (min-width:1280px) {
+    .container-hero {
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .hero-dekstop-leftside {
+        align-self: flex-start;
+        max-width: 672px;
+    }
+
+    .hero-dekstop-rightside {
+        align-self: flex-end;
+    }
+
+    .hero-scnd-ttl {
+        font-size: 64px;
+        line-height: 1.07;
+        letter-spacing: -2.56px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 1.13;
+        letter-spacing: -0.56px;
+    }
+
+    .hero-btn {
+        width: 132px;
+        height: 132px;
+        font-size: 28px;
+        line-height: 1.07;
+        letter-spacing: -1.12px;
+    }
+
+
+    .hero-logo-back {
+        width: 515px;
+    }
+
+    .hero-list-link {
+        width: 267px;
+        gap: 8px;
+    }
+
+    .hero-link-item {
+        padding: 12px 32px;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: -0.48px;
+    }
+
+}
