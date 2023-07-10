@@ -6,3 +6,9 @@ import './js/Animation/bounce-in';
 import './js/Animation/fade-in-up';
 import './js/Animation/scroll-fade';
 import './js/Animation/slide-in-left';
+
+import './js/aos'
+
+(()=> {
+    AOS.init();
+})()
