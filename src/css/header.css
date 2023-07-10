@@ -66,8 +66,6 @@
   visibility: visible;
 }
 
-.js-menu-container {
-}
 .js-close-menu {
   position: absolute;
   width: 24px;
@@ -167,6 +165,9 @@
   .header-nav {
     margin-right: 308px;
     gap: 20px;
+  }
+  .header-nav-link:is(:hover, :focus) {
+    color: var(--accent);
   }
   .header-cart-button {
     height: 24px;
