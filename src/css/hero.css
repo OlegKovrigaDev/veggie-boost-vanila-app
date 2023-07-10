@@ -119,11 +119,6 @@
 /******* ! MEDIA 768 *********/
 @media screen and (min-width: 768px) {
 
-    .container-hero {
-        max-width: 768px;
-
-    }
-
     .hero-img {
         width: 158px;
         margin-bottom: 16px;
@@ -172,10 +167,8 @@
 
 @media screen and (min-width:1280px) {
     .container-hero {
-        max-width: 1280px;
         display: flex;
         justify-content: space-between;
-
     }
 
     .hero-dekstop-leftside {

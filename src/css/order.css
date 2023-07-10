@@ -1,9 +1,3 @@
-.container {
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .order {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -136,11 +130,6 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-    margin: 0 auto;
-  }
 
   .order-title-container {
     margin-bottom: 100px;
@@ -235,9 +224,6 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
 
   .order-title {
     font-size: 48px;
