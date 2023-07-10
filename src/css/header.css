@@ -42,6 +42,73 @@
   display: none;
 }
 
+.menu-container {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  top: 50px;
+  left: 0;
+  z-index: 999;
+  padding-top: 124px;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.js-menu-container {
+}
+.js-close-menu {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  right: 20px;
+  margin-left: auto;
+  padding: 0;
+  line-height: 0;
+  color: #77ac63;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7e9fc;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.mob-menu-list {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mob-menu-item {
+  margin-bottom: 16px;
+}
+.mob-menu-link {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: 0.04em;
+}
+
+.menu-cart-icon {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
 /* -----------------------TABLET--------------- */
 @media screen and (min-width: 768px) {
   .container {
