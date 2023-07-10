@@ -1,1 +1,162 @@
-<div class="module">Module</div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn-close" type="button" data-modal-close>
+      <svg class="close-icon" width="16" height="16">
+        <use href="../img/javascript.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Your Order</h2>
+    <form class="modal-form">
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-card-left">
+            <h3 class="input-title">Cabbage Basket</h3>
+            <p class="input-text">Plant</p>
+          </div>
+          <div class="product-card-right">
+            <img
+              class="product-img"
+              srcset="./img/modal/cabbage.png x1,
+            ./img/modal/cabbage@2x.png x2"
+              src="./img/modal/cabbage.png"
+              alt="cabbage"
+              width="94"
+              height="78"
+            />
+            <input
+              class="input-prod visually-hidden"
+              type="checkbox"
+              id="proded"
+              name="proded"
+              value="true"
+            />
+            <label class="label" for="proded">
+              <span class="icon-checkbox">
+                <svg class="icon" width="8" height="8">
+                  <use href="./img/javascript.svg#icon-vector"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-left">
+            <h3 class="input-title">Tomato Basket</h3>
+            <p class="input-text">Plant</p>
+          </div>
+          <div class="product-card-right">
+            <img
+              class="product-img"
+              srcset="./img/modal/tomato.png x1, ./img/modal/tomato@2x.png x2"
+              src="./img/modal/tomato.png"
+              alt="tomato"
+              width="94"
+              height="78"
+            />
+            <input
+              class="input-tomato visually-hidden"
+              type="checkbox"
+              id="tomato"
+              name="tomato"
+              value="true"
+            />
+            <label class="label" for="tomato">
+              <span class="icon-checkbox">
+                <svg class="icon" width="8" height="8">
+                  <use href="./img/javascript.svg#icon-vector"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-left">
+            <h3 class="input-title">Vegetables Basket</h3>
+            <p class="input-text">Plant</p>
+          </div>
+          <div class="product-card-right">
+            <img
+              class="product-img"
+              srcset="./img/modal/vegetables-basket.png x1, 
+              ./img/modal/vegetables-basket@2 x2.png"
+              src="./img/modal/vegetables-basket.png"
+              width="94"
+              height="78"
+              alt="basket"
+            />
+            <input
+              class="input-veget visually-hidden"
+              type="checkbox"
+              id="veget"
+              name="veget"
+              value="true"
+            />
+            <label class="label" for="veget">
+              <span class="icon-checkbox">
+                <svg class="icon" width="8" height="8">
+                  <use href="./img/javascript.svg#icon-vector"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <div class="modal-content">
+          <label class="modal-input-label" for="user-name"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              autocomplete="username"
+              placeholder="Enter full name..."
+            />
+          </div>
+        </div>
+
+        <div class="modal-content">
+          <label class="modal-input-label" for="user-email"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              autocomplete="email"
+              placeholder="Enter email..."
+            />
+          </div>
+        </div>
+
+        <div class="modal-content">
+          <label class="modal-input-label" for="user-card"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              type="number"
+              name="user-card"
+              id="user-card"
+              autocomplete="number"
+              placeholder="Enter card..."
+            />
+          </div>
+        </div>
+
+        <div class="modal-content modal-comment-box">
+          <label class="modal-input-label" for="user-comment"></label>
+          <textarea
+            class="modal-comment"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter comments..."
+          ></textarea>
+          <button class="modal-submit-btn" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="./js/modal"></script>
