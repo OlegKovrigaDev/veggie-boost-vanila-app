@@ -21,11 +21,11 @@
 .footer-tel:is(:hover, :focus),
 .footer-menu-ul-li-a:is(:hover, :focus),
 .footer-logo-link:is(:hover, :focus) > .footer-logo-text {
-  color: white;
+  color: var(--white);
 }
 
 .footer-logo-link:is(:hover, :focus) > .footer-logo-icon {
-  fill: white;
+  fill: var(--white);
 }
 
 .footer-logo-icon {
@@ -38,9 +38,9 @@
 }
 
 .footer-soc-link:is(:hover, :focus) {
-  color: white;
-  border-color: white;
-  fill: white;
+  color: var(--white);
+  border-color: var(--white);
+  fill: var(--white);
 }
 
 .footer-tel,
