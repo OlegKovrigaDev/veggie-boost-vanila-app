@@ -20,13 +20,10 @@
         <use href="./img/javascript.svg#icon-cart"></use>
       </svg>
     </button>
-    <!----------- MENU-BUTTON --------------->
-    <!-- <button class="header-hamburger-button" type="button">
-      <svg class="header-hamburger-icon" width="24" height="24">
-        <use href="./img/javascript.svg#icon-hamburger"></use>
-      </svg>
-    </button> -->
-    <button class="header-hamburger-button" type="button">
+  
+    <button class="header-hamburger-button menu-toggle js-open-menu" type="button" 
+    aria-expanded="false"
+    aria-controls="mobile-menu">
       <!-- <svg class="header-hamburger-icon" width="24" height="24">
         <use href="./img/javascript.svg#icon-hamburger"></use>
       </svg> -->
@@ -34,5 +31,36 @@
         <div></div>
       </div>
     </button>
+  </div>
+
+  <!-- Mob menu -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button type="button" class="menu-toggle js-close-menu">
+      <svg class="mob-menu-icon" width="24" height="24">
+        <use href="/img/javascript.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mob-menu-list list">
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link active" href="#order"
+          >How It Works</a
+        >
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link" href="#vegetables">Vegetables</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link" href="#footer">Contacts</a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#module" class="mob-menu-link link">
+          <svg class="menu-cart-icon" width="20" height="20">
+            <use href="/img/javascript.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
