@@ -44,7 +44,7 @@
 
 .call-input:hover,
 .call-input:focus {
-  border-color: var(--accent);
+  border-color: var(--orange);
 }
 
 .call-input::placeholder {
@@ -158,11 +158,6 @@
     padding-top: 37px;
 
     display: flex;
-  }
-
-  .call-text-wrap {
-    padding-top: 98px;
-    padding-bottom: 98px;
   }
 
   @media (min-device-pixel-ratio: 2),
