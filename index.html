@@ -7,8 +7,8 @@
     <title>Veggieboost</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/veggie-boost-vanila-app/assets/index-2f64d922.js"></script>
-    <link rel="stylesheet" href="/veggie-boost-vanila-app/assets/index-d82f036a.css">
+    <script type="module" crossorigin src="/veggie-boost-vanila-app/assets/index-f8ee11e3.js"></script>
+    <link rel="stylesheet" href="/veggie-boost-vanila-app/assets/index-a0ffa2ab.css">
   </head>
   <body>
     <header class="header">
@@ -515,6 +515,8 @@
               type="text"
               name="user-name"
               id="user-name"
+              pattern="[A-Za-z]{6,}"
+              title="Імя не может бути меншим за 3 латинських літери, та мати цифри."
               autocomplete="username"
               placeholder="Enter full name..."
             />
@@ -562,7 +564,6 @@
     </form>
   </div>
 </div>
-<script src="./js/modal"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
