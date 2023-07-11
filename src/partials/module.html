@@ -2,7 +2,7 @@
   <div class="modal">
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg class="close-icon" width="16" height="16">
-        <use href="../img/javascript.svg#icon-close"></use>
+        <use href="./img/javascript.svg#icon-close"></use>
       </svg>
     </button>
     <h2 class="modal-title">Your Order</h2>
@@ -111,6 +111,8 @@
               type="text"
               name="user-name"
               id="user-name"
+              pattern="[A-Za-z]{6,}"
+              title="Імя не может бути меншим за 3 латинських літери, та мати цифри."
               autocomplete="username"
               placeholder="Enter full name..."
             />
@@ -136,7 +138,7 @@
           <div class="input-wrap">
             <input
               class="modal-input"
-              type="number"
+              type="text"
               name="user-card"
               id="user-card"
               autocomplete="number"
@@ -159,4 +161,3 @@
     </form>
   </div>
 </div>
-<script src="./js/modal"></script>
