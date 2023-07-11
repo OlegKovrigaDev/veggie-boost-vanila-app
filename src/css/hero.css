@@ -25,6 +25,7 @@
 
 .hero-scnd-ttl span {
     color: var(--light-grey);
+    font-style: italic;
 }
 
 .hero-text {
