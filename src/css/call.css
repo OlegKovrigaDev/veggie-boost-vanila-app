@@ -73,6 +73,7 @@
 .call-btn:is(:hover, :focus) {
   background-color: var(--accent);
   outline: none;
+  transform: scale(1.1);
 }
 
 .call-img-wrap {
