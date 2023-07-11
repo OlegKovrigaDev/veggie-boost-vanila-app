@@ -225,11 +225,6 @@
     border-color: #FC8A11;
 }
 
-.modal-submit-btn[type="submit"]:hover,:focus {
-    transform: scale(1.1);
-    transition: 1s ease;
-}
-
 .label {
     display: flex;
     align-items: center;
