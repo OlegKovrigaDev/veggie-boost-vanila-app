@@ -1,4 +1,271 @@
 .vegetables {
-    padding-top: 80px;
+   
     padding-bottom: 80px;
+}
+
+.header-veg{
+    color: #141414;
+        text-align: center;
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.96px;
+        padding-bottom: 14px;
+        
+}
+
+.main-text-veg{
+color: #141414;
+text-align: center;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.56px;
+text-align: center;
+padding-bottom: 40px;
+}
+
+
+.veg-list{
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    
+        flex-wrap: wrap;
+}
+.veg-item{
+    width: 335px;
+    height: 443px;
+    background: #EAF7E5;
+   position: relative;
+    border-radius: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-item-up{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.item-name {
+    padding-bottom: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.96px;
+}
+
+.item-description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.item-price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+ 
+}
+
+.btn-veg{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-14deg);
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    background-color: #FC8A11;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.veg-anime {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: rgb(255, 130, 0) 20%, rgb(255, 38, 0) 80%;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+    align-items: center;
+    border: 0;
+}
+
+
+.btn-veg:hover,
+.btn-veg:focus {
+    background: #A1C487;
+
+}
+
+.vector-btn{
+  margin-right: 4px;
+        stroke: #fff;
+        fill: #FFF;
+}
+.add-redish {
+    display: none;
+}
+
+
+
+
+/* tablet media 1section */
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+
+.vegetables {
+
+    padding-bottom: 100px;
+}
+
+.header-veg{
+    text-align: center;
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -1.12px;
+        text-transform: uppercase;
+}
+
+.main-text-veg{
+    color: #141414;
+        text-align: center;
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 562px;
+        justify-content: center;
+       
+}
+
+.btn-veg{
+    width: 114px;
+    height: 114px;
+}
+
+.veg-item{
+   
+   
+    width: calc((100% - 20px) / 2);
+}
+
+.add-redish {
+    display: none;
+}
+}
+
+/* desctop media 1section */
+
+
+@media screen and (min-width:1280px) {
+    .container {
+        max-width: 1216px;
+    }
+
+
+.vegetables {
+
+    padding-bottom: 124px;
+}
+
+/* .veg-item-redish{
+    width: 335px;
+        height: 443px;
+        background: #EAF7E5;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+    
+        border-radius: 20px;
+        display: block;
+        align-items: center;
+    
+} */
+
+.btn-veg {
+color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    width: 114px;
+    height: 114px;
+}
+.add-redish{
+    display: block;
+}
+
+
+.main-text-veg{
+    width: 562px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.veg-item {
+ 
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.veg-list{
+    display: wrap;
+    gap: 24px 24px ;
+}
+.text-item-up{
+    padding-top: 64px;
+    padding-left: 24px;
+}
+
 }
