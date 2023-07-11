@@ -12,12 +12,7 @@
 }
 
 .button-close:is(:hover, :focus) {
-    background-color: var(--ocean-color);
     border: none;
-}
-
-.button-close:is(:hover, :focus) .icon {
-    fill: var(--white-color);
 }
 
 .visually-hidden {
@@ -143,9 +138,7 @@
     background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 100px;
-    color: rgba(20, 20, 20, 0.5);
     outline: transparent;
-    transition: border-color var(--transition);
     margin-bottom: 14px;
 }
 
@@ -178,30 +171,13 @@
     outline: transparent;
 }
 
-/* .modal-comment:focus {
-    border-color: ;
-} */
-
 .modal-comment::placeholder {
     font-size: 14px;
-
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
     color: rgba(20, 20, 20, 0.5);
-}
-
-.modal-comment-check {
-    margin-bottom: 55px;
-}
-
-.modal-check {
-    margin-bottom: 55px;
-}
-
-.terms-check-icon {
-    color: #31d0aa;
 }
 
 .modal-submit-btn {
@@ -223,11 +199,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.prod-window {
-    width: 100%;
-    height: 903px;
-    background-color: #FAF3E7;
-    border-radius: 20px;
+.modal-submit-btn:hover {
+    background-color: #f2a048;
 }
 
 .product-card {
@@ -238,26 +211,23 @@
 
 }
 
-.input-prod-lebel {
-    width: 295px;
-    height: 119px;
-
-
-}
-
 .input-prod {
     position: absolute;
     right: 14px;
     top: 14px;
 }
 
-.input-prod-label {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    width: auto;
-    margin-bottom: 12px;
-    background-color: rgba(250, 243, 231, 1);
+.modal-input:hover, :focus {
+    border-color: #FC8A11;
+}
+
+.modal-comment:hover, :focus {
+    border-color: #FC8A11;
+}
+
+.modal-submit-btn[type="submit"]:hover,:focus {
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .label {
@@ -294,7 +264,7 @@
     border: none;
     fill: #A1C487;
 }
-
+    
 .input-tomato:checked+.label span {
     background-color: transparent;
     border: none;
