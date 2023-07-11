@@ -74,12 +74,6 @@
     margin-bottom: 8px;
 }
 
-.hero-btn:is(:hover, :focus) {
-    background-color: var(--light-grey2);
-    color: var(--accent);
-
-}
-
 .hero-logo-back {
     margin: 0px auto 16px;
 }
