@@ -200,7 +200,6 @@ padding-bottom: 40px;
 }
 }
 
-/* desctop media 1section */
 
 
 @media screen and (min-width:1280px) {
@@ -213,20 +212,6 @@ padding-bottom: 40px;
 
     padding-bottom: 124px;
 }
-
-/* .veg-item-redish{
-    width: 335px;
-        height: 443px;
-        background: #EAF7E5;
-        padding-left: 20px;
-        padding-top: 40px;
-        padding-bottom: 24px;
-    
-        border-radius: 20px;
-        display: block;
-        align-items: center;
-    
-} */
 
 .btn-veg {
 color: #FFF;
