@@ -7,17 +7,23 @@
     <title>Veggieboost</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/veggie-boost-vanila-app/assets/index-001dc63d.js"></script>
-    <link rel="stylesheet" href="/veggie-boost-vanila-app/assets/index-8e368299.css">
+    <script type="module" crossorigin src="/veggie-boost-vanila-app/assets/index-931e4abd.js"></script>
+    <link rel="stylesheet" href="/veggie-boost-vanila-app/assets/index-9c521c7d.css">
   </head>
   <body>
     <header class="header">
-  <div class="container header-continer">
+  <div class="container header-container">
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li class="header-nav-item"><a class="header-nav-link" href="#order">How It Works</a></li>
-        <li class="header-nav-item"><a class="header-nav-link" href="#vegetables">Vegetables</a></li>
-        <li class="header-nav-item"><a class="header-nav-link" href="#call">Contacts</a></li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#order">How It Works</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#call">Contacts</a>
+        </li>
       </ul>
     </nav>
 
@@ -27,33 +33,11 @@
       </svg>
       <p class="header-logo-text">Veggieboost</p>
     </a>
-
-    <button class="header-cart-button" type="button">
-      <svg class="header-cart-icon" width="20" height="20">
-        <use href="/veggie-boost-vanila-app/assets/javascript-0e3382df.svg#icon-cart"></use>
-      </svg>
-    </button>
-
-    <button class="header-hamburger-button menu-toggle js-open-menu" type="button" aria-expanded="false"
-      aria-controls="mobile-menu">
-      <!-- <svg class="header-hamburger-icon" width="24" height="24">
-        <use href="./img/javascript.svg#icon-hamburger"></use>
-      </svg> -->
-      <div class="hamburger">
-        <div></div>
-      </div>
-    </button>
   </div>
 
   <!-- Mob menu -->
 
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button type="button" class="menu-toggle js-close-menu">
-      <svg class="mob-menu-icon" width="24" height="24">
-        <use href="/veggie-boost-vanila-app/assets/javascript-0e3382df.svg#icon-close"></use>
-      </svg>
-    </button>
-
     <ul class="mob-menu-list list">
       <li class="mob-menu-item">
         <a class="mob-menu-link link active" href="#order">How It Works</a>
@@ -73,7 +57,29 @@
       </li>
     </ul>
   </div>
+
+  <!--!========= BUTTONS ==============-->
+  <div class="button-container">
+    <button class="header-cart-button" type="button">
+      <svg class="header-cart-icon" width="20" height="20">
+        <use href="/veggie-boost-vanila-app/assets/javascript-0e3382df.svg#icon-cart"></use>
+      </svg>
+    </button>
+
+    <button
+      class="header-hamburger-button hamburger menu-toggle js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <!--!====================================-->
 </header>
+
     <main>
       <section class="hero" id="hero">
   <div class="container container-hero">
