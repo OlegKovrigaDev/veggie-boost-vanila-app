@@ -45,7 +45,21 @@
   padding-bottom: 20px;
   padding-left: 20px;
 }
+
+/*! ================================== */
+
+@keyframes vegs {
+  from {
+    top: 57%;
+  }
+
+  to {
+    top: 60%;
+  }
+}
+
 .veg-item {
+  position: relative;
   width: 335px;
   height: 443px;
   background: var(--light-grey);
@@ -54,7 +68,88 @@
   display: block;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 120ms;
+  overflow: hidden;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
 }
+
+.veg-item:active {
+  transform: scale(0.95);
+}
+
+.veg-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 25px 5px rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.veg-item::after {
+  content: 'Add to Cart';
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  padding-left: 15px;
+  background: var(--accent);
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.8;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: all 0.2s ease-in;
+}
+
+.veg-item:hover::after {
+  bottom: 0;
+}
+
+.veg-item:active::after {
+  content: 'Adding !';
+  height: 65px;
+}
+
+.veg-item img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(3px 3px 5px #18181815);
+  transform: translate(-50%, -50%);
+  animation: vegs 1s ease infinite alternate;
+  transition: all 0.5s ease-in;
+}
+
+.veg-item:hover img {
+  width: 220px;
+  height: auto;
+  animation: none;
+  transform: rotate(15deg) translate(-35%, -25%);
+}
+
+.text-item-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: all 0.5s ease-in;
+}
+
+.veg-item:hover .text-item-up {
+  left: 50px;
+  top: 12px;
+  transform: scale(1.5);
+}
+
+/*! ================================== */
 
 .text-item-up {
   padding-top: 40px;
