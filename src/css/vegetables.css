@@ -124,7 +124,10 @@ padding-bottom: 40px;
     align-items: center;
     border: 0;
 }
-
+.veg-anime,
+.veg-anime:is(:hover, :focus) {
+    transform: scale(1.2);
+}
 
 .btn-veg:hover,
 .btn-veg:focus {
@@ -241,7 +244,16 @@ color: #FFF;
     text-transform: uppercase;
     width: 114px;
     height: 114px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-14deg);
+    border-radius: 50%;
+    cursor: pointer;
 }
+
+
+
 .add-redish{
     display: block;
 }
