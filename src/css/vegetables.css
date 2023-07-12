@@ -86,9 +86,6 @@ padding-bottom: 40px;
 
 .btn-veg{
     margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
     margin-left: auto;
     margin-right: auto;
     width: 80px;
@@ -106,7 +103,6 @@ padding-bottom: 40px;
     text-transform: uppercase;
     border-radius: 50%;
     background-color: #FC8A11;
-    margin-bottom: 8px;
     cursor: pointer;
 }
 
@@ -144,7 +140,53 @@ padding-bottom: 40px;
     display: none;
 }
 
+/* mob media 1section*/
+@media screen and (min-width:320px) {
+.btn-veg {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        height: 80px;
+        transform: rotate(-14deg);
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.56px;
+        text-transform: uppercase;
+        border-radius: 50%;
+        background-color: #FC8A11;
+        cursor: pointer;
+    }
 
+    .veg-anime {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background: rgb(255, 130, 0) 20%, rgb(255, 38, 0) 80%;
+        transition: all 0.3s ease-in-out 0s;
+        box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+        animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+        align-items: center;
+        border: 0;
+    }
+
+  
+
+    .btn-veg:hover,
+    .btn-veg:focus {
+        background: #A1C487;
+
+    }
+}
 
 
 /* tablet media 1section */
@@ -188,6 +230,18 @@ padding-bottom: 40px;
 }
 
 .btn-veg{
+    color: #FFF;
+        text-align: center;
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        transform: rotate(-14deg);
+        margin-top: 40px;
     width: 114px;
     height: 114px;
 }
@@ -241,10 +295,10 @@ color: #FFF;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.72px;
+    margin-top: 40px;
     text-transform: uppercase;
     width: 114px;
     height: 114px;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     transform: rotate(-14deg);
