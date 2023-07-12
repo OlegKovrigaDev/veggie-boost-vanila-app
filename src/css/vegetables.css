@@ -10,12 +10,12 @@
 
 .header-veg {
   font-weight: 500;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .main-text-veg {
   font-weight: 400;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .header-veg,
 .item-name {
@@ -124,7 +124,8 @@
 
   .main-text-veg {
     width: 562px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
