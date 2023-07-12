@@ -166,7 +166,7 @@
 .btn-veg {
   width: 80px;
   height: 80px;
-  margin: 20px auto 8px;
+  margin: 20px auto 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -229,6 +229,7 @@
   .btn-veg {
     width: 114px;
     height: 114px;
+    margin-top: 40px;
   }
 
   .veg-item {
