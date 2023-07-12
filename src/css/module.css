@@ -142,6 +142,7 @@
     border-radius: 100px;
     outline: transparent;
     margin-bottom: 14px;
+    transition: 1s ease;
 }
 
 .modal-input-label {
@@ -170,6 +171,7 @@
     padding: 8px 16px;
     background-color: transparent;
     resize: none;
+    transition: 1s ease;
     outline: transparent;
 }
 
@@ -195,13 +197,16 @@
     letter-spacing: 0.04em;
     border-radius: 100px;
     border: none;
+    transition: 1s ease;
     padding: 15px 35px;
     color: white;
     background: #FC8A11;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal-submit-btn:hover {
+.modal-btn-anim:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
     background-color: #f2a048;
 }
 
@@ -219,7 +224,15 @@
     top: 14px;
 }
 
-.modal-input:hover, :focus {
+.modal-input:focus {
+    transform: scale(1.1);
+}
+
+.modal-comment:focus {
+    transform: scale(1.1);
+}
+
+.modal-input:hover,:focus {
     border-color: #FC8A11;
 }
 
