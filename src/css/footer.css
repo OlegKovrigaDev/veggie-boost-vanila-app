@@ -92,9 +92,16 @@
   margin-bottom: 40px;
 }
 
+.footer-address {
+  max-width: 172px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
   }
 
   .img-plus-logo-container {
@@ -102,11 +109,11 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    margin: 0;
   }
 
   .footer-address {
-    max-width: 172px;
-    text-align: right;
+    text-align: left;
   }
 
   .footer-font {
