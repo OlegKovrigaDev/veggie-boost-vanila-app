@@ -270,7 +270,7 @@
 @media screen and (min-width: 768px) {
 
     .modal {
-        background-image: url(../img/modal/girl-3.png);
+        background-image: url(../img/modal/girl-3.webp);
         top: 50%;
         transform: translate(-50%, -50%);
         background-size: 444px 413px;
@@ -315,7 +315,7 @@
         (mon-resolution: 2dppx) {
             .modal {
                 background-image:
-                    url(../img/modal/girl-3@2x.png);
+                    url(../img/modal/girl-3@2x.webp);
             }
         }
 
@@ -348,7 +348,7 @@
         (mon-resolution: 2dppx) {
             .modal {
                 background-image:
-                    url(../img/modal/girl-3@2x.png);
+                    url(../img/modal/girl-3@2x.webp);
             }
         }
 }

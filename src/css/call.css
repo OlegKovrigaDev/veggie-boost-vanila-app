@@ -77,7 +77,7 @@
 }
 
 .call-img-wrap {
-  background-image: url(../img/call/bg-2.png);
+  background-image: url(../img/call/bg-2.webp);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -94,7 +94,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .call-img-wrap {
-    background-image: url(../img/call/bg-2@2x.png);
+    background-image: url(../img/call/bg-2@2x.webp);
   }
 }
 
@@ -128,7 +128,7 @@
   }
 
   .call-img-wrap {
-    background-image: url(../img/call/bg-2tab.png);
+    background-image: url(../img/call/bg-2tab.webp);
     border-radius: 80px;
   }
 
@@ -136,7 +136,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .call-img-wrap {
-      background-image: url(../img/call/bg-2tab@2x.png);
+      background-image: url(../img/call/bg-2tab@2x.webp);
     }
   }
 }
@@ -154,7 +154,7 @@
   }
 
   .call-img-wrap {
-    background-image: url(../img/call/bg-2desk.png);
+    background-image: url(../img/call/bg-2desk.webp);
     max-width: 525px;
     padding-top: 37px;
 
@@ -165,7 +165,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .call-img-wrap {
-      background-image: url(../img/call/bg-2desk@2x.png);
+      background-image: url(../img/call/bg-2desk@2x.webp);
     }
   }
 
